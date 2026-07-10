@@ -21,7 +21,6 @@ export const useCharacters = () => {
 
     useEffect(() => {
         client.request(CHARACTERS).then((response: CharactersResponse) => {
-            console.log("Characters response:", response);
             setCharacters(response.characters.results);
         }).catch((error: Error) => {
             setError(error);

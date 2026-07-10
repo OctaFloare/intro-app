@@ -14,9 +14,12 @@ export const Characters = () => {
 
     return <div className="characters-container">
         {characters.map((character: CharacterType) => {
-            return <div key={`${character.id}-${character.name}`}>
-                <Character name={character.name} image={character.image} />
-            </div>;
+            return <Character
+                key={`${character.id}-${character.name}`}
+                name={character.name}
+                image={character.image}
+                id={character.id}
+            />;
         })}
     </div>
 }
