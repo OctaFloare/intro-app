@@ -4,6 +4,7 @@ import { Contact } from "./contact";
 import { Characters } from "./characters";
 import { Character } from "./character";
 import { UpdateCharacter } from "./updateCharacter";
+import {Episodes} from "./episodes";
 
 const routes = createBrowserRouter([
     {
@@ -25,7 +26,11 @@ const routes = createBrowserRouter([
     {
         path: '/update-character/:id',
         element: <UpdateCharacter />
-    }
+    },
+    {
+        path: '/episodes',
+        element: <Episodes/>
+    },
 ])
 
 export const Routes = () => {

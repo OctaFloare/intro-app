@@ -204,3 +204,16 @@
   align-items: center;
   margin-top: 50px;
 }
+
+.episodes-container {
+    display: grid;
+    grid-template-columns:30% 30% 30%;
+    justify-content: center;
+    gap: 5%;
+    margin: 5%;
+}
+
+.episode {
+    border: 5px dotted;
+    border-radius: 25px;
+}
