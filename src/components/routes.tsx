@@ -3,6 +3,7 @@ import { Home } from "./home";
 import { Contact } from "./contact";
 import { Characters } from "./characters";
 import { Character } from "./character";
+import { UpdateCharacter } from "./updateCharacter";
 
 const routes = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const routes = createBrowserRouter([
     {
         path: '/character/:id',
         element: <Character />
+    },
+    {
+        path: '/update-character/:id',
+        element: <UpdateCharacter />
     }
 ])
 

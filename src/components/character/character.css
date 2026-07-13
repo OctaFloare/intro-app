@@ -1,3 +1,29 @@
 .character-container {
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.update-button {
+    background-color: green;
+    width: 100px;
+}
+
+.delete-button {
+    background-color: red;
+    width: 100px;
+}
+
+.character-image {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.character-actions {
+    display: flex;
+    gap: 10px;
 }

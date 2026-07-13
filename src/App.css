@@ -195,3 +195,12 @@
   gap: 30px;
   margin: 50px 0;
 }
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}

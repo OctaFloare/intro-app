@@ -30,5 +30,6 @@ export const useCharacter = ({ id }: { id: number }) => {
         },
         retry: 1,
         gcTime: 1000 * 10,
+        staleTime: 1000 * 5,
     })
 }
