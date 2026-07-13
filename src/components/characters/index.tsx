@@ -1,3 +1,4 @@
+import { Navbar } from "../navbar";
 import { Character } from "./character";
 import { useCharacters, type Character as CharacterType } from "./hooks/useCharacters"
 
@@ -12,7 +13,9 @@ export const Characters = () => {
         return <div>Error: {error.message}</div>;
     }
 
-    return <div className="characters-container">
+    return <div>
+        <Navbar />
+    <div className="characters-container">
         {characters.map((character: CharacterType) => {
             return <Character
                 key={`${character.id}-${character.name}`}
@@ -21,5 +24,6 @@ export const Characters = () => {
                 id={character.id}
             />;
         })}
+    </div>
     </div>
 }

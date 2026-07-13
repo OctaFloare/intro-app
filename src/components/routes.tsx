@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./home";
 import { Contact } from "./contact";
 import { Characters } from "./characters";
-import { CharacterDetail } from "./character";
+import { Character } from "./character";
 
 const routes = createBrowserRouter([
     {
@@ -19,12 +19,12 @@ const routes = createBrowserRouter([
     },
     {
         path: '/character/:id',
-        element: <CharacterDetail />
+        element: <Character />
     }
 ])
 
 export const Routes = () => {
     return <>
-        <RouterProvider router={routes} />;
+        <RouterProvider router={routes} />
     </>
 }

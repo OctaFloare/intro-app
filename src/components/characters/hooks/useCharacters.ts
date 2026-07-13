@@ -3,7 +3,7 @@ import { client } from "../../../common/graphql"
 import { CHARACTERS } from "../characters";
 
 export type Character = {
-    id: string;
+    id: number;
     name: string;
     image: string;
 } 
@@ -28,8 +28,6 @@ export const useCharacters = () => {
             setLoading(false);
         });
     }, []);
-
-
 
     return {
         characters,
